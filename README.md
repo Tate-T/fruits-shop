@@ -1,1 +1,1 @@
-# parcel-project-template
+fruits-shop
