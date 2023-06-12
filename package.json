@@ -5,7 +5,9 @@
   "homepage": "https://tate-t.github.io/fruits-shop/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /fruits-shop/"
+    "build": "parcel build src/*.html --public-url /fruits-shop/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
