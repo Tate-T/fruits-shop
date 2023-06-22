@@ -7,7 +7,7 @@
     padding-bottom: 144px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 150px;
     padding-bottom: 150px;
   }
@@ -43,6 +43,8 @@
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     margin-bottom: 44px;
     max-width: 334px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
       max-width: 509px;
@@ -86,7 +88,7 @@
     gap: 16px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     gap: 24px;
   }
 
@@ -107,7 +109,7 @@
       padding-right: 24px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 389px;
     }
   }

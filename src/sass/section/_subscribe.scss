@@ -30,3 +30,110 @@
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+
+.subscribe__photo1 {
+  width: 335px;
+  height: 476px;
+
+  @media screen and (min-width: 768px) {
+    width: 344px;
+    height: 480px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 792px;
+    height: 502px;
+  }
+}
+
+.subscribe__photo2 {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 344px;
+    height: 480px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 400px;
+    height: 502px;
+  }
+}
+
+.subscribe__photos {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
+}
+
+.subscribe__text {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-family: DM Sans;
+    line-height: 1.29;
+    letter-spacing: -0.56px;
+    max-width: 492px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+}
+
+.subscribe__filling {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    width: 292px;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    opacity: 0.30000001192092896;
+    color: #fff;
+    font-size: 14px;
+    font-family: DM Sans;
+    line-height: 1.29;
+    letter-spacing: -0.56px;
+    background-color: transparent;
+    padding-left: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.subscribe__btn {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-family: DM Sans;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    background: #9dc162;
+    padding: 15px 35px;
+    position: absolute;
+    top: 0;
+    right: 206px;
+  }
+}
+
+.subscribe__content {
+  position: relative;
+}
