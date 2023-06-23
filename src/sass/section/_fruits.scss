@@ -52,6 +52,7 @@
   }
 
   &__btn {
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
@@ -62,18 +63,36 @@
     text-transform: uppercase;
     color: #ffffff;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-    transform: rotate(-14deg);
-    width: 114px;
-    height: 114px;
+    width: 80px;
+    height: 80px;
     background-color: #9dc262;
     border-radius: 100%;
+    padding: 26px 8px 26px 25px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
+      width: 114px;
+      height: 114px;
       font-size: 18px;
       line-height: 1.33;
-      margin-left: auto;
-      margin-right: auto;
+      padding: 38px 17px 38px 36px;
     }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 40px;
+    left: 7px;
+
+    @media screen and (min-width: 768px) {
+      top: 61px;
+      left: 18px;
+    }
+  }
+
+  &__btn-text {
+    transform: rotate(-14deg);
   }
 }
 
