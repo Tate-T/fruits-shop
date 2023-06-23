@@ -2,7 +2,14 @@
   padding-bottom: 150px;
 }
 
+.subscribe__title-position {
+  position: relative;
+}
+
 .subscribe__title {
+  position: absolute;
+  top: 0px;
+  right: 50%;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
