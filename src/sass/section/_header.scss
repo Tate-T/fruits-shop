@@ -10,9 +10,13 @@ padding-top: 16px;
 padding-bottom: 16px;
 }
 .header__list {
+    display: none;
+@media screen and (min-width: 768px) {
+
     display: flex;
 flex-direction: row;
 gap: 20px;
+  }
 }
 
 .header__span {
@@ -42,7 +46,22 @@ color: #AE1332;
 margin-left: 8px;
 }
 .header__shop-icon {
+    
+display: none;
+@media screen and (min-width: 768px) {
+
     width: 28px;
 height: 28px;
 fill: #AE1332;
+  }
+}
+
+.header__open-button {
+    background-color: transparent;
+}
+.header__open-icon {
+    width: 24px;
+height: 24px;
+fill: #AE1332;
+stroke: #AE1332;
 }
