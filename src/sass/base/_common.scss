@@ -30,3 +30,8 @@ body {
     max-width: 1215px;
   }
 }
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}

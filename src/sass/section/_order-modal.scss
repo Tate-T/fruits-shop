@@ -1,0 +1,104 @@
+.order-modal {
+  position: fixed;
+  background: #fff;
+  width: 335px;
+  height: 903px;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  z-index: 1000;
+  overflow: scroll;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+    width: 704px;
+    height: 853px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 891px;
+    height: 911px;
+  }
+}
+
+.order-modal__close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  fill: rgba(174, 19, 50, 1);
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+  }
+}
+
+.order-modal__title {
+  color: #ae1332;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  font-size: 28px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+
+.order-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 20px;
+  }
+}
+
+.order-cards__item {
+  width: 295px;
+  height: 119px;
+  padding: 14px 14px 8px 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 250px;
+    padding: 14px;
+    padding-left: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 257px;
+    height: 308px;
+  }
+}
+
+.order-cards__title {
+  color: #fff;
+  font-size: 18px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: -0.72px;
+  margin-right: 5px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-right: 0;
+  }
+}

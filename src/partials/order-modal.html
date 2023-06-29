@@ -1,35 +1,46 @@
 <div data-order-modal class="order-modal is-hidden">
   <button data-close-order-modal type="button" class="order-modal__close">
-    <svg class="order-modal__cross"></svg>
+    <svg class="order-modal__cross">
+      <use href="./img/symbol-defs.svg#cross"></use>
+    </svg>
   </button>
   <h2 class="order-modal__title">Your Order</h2>
   <ul class="order-cards">
     <li class="order-cards__item">
-      <h3 class="order-cards__title">Strawberry Basket</h3>
-      <p class="order-cards__text">Plant</p>
+      <div>
+        <h3 class="order-cards__title">Strawberry Basket</h3>
+        <p class="order-cards__text">Plant</p>
+      </div>
       <img
         src="./img/desktop/hero-basket@1x.webp"
         alt="strawberry-basket"
         class="order-cards__photo"
       />
+      <input type="checkbox" class="order-cards__checkbox" />
     </li>
     <li class="order-cards__item">
-      <h3 class="order-cards__title">Apple Basket</h3>
-      <p class="order-cards__text">Plant</p>
+      <div>
+        <h3 class="order-cards__title">Apple Basket</h3>
+        <p class="order-cards__text">Plant</p>
+      </div>
       <img
         src="./img/desktop/order-card2@1x.webp"
         alt="apple-basket"
         class="order-cards__photo"
       />
+      <input type="checkbox" class="order-cards__checkbox" />
     </li>
     <li class="order-cards__item">
-      <h3 class="order-cards__title">Fruits Basket</h3>
-      <p class="order-cards__text">Plant</p>
+      <div>
+        <h3 class="order-cards__title">Fruits Basket</h3>
+        <p class="order-cards__text">Plant</p>
+      </div>
       <img
         src="./img/desktop/order-card3@1x.webp"
         alt="fruits-basket"
         class="order-cards__photo"
       />
+      <input type="checkbox" class="order-cards__checkbox" />
     </li>
   </ul>
   <ul class="order-list">
