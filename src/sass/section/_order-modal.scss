@@ -2,7 +2,7 @@
   position: fixed;
   background: #fff;
   width: 335px;
-  height: 903px;
+  height: 90vh;
   border-radius: 20px;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -14,12 +14,12 @@
   @media screen and (min-width: 768px) {
     padding: 40px;
     width: 704px;
-    height: 853px;
+    // height: 500px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 891px;
-    height: 911px;
+    // height: 911px;
   }
 }
 
@@ -27,13 +27,23 @@
   position: absolute;
   top: 22px;
   right: 20px;
-  width: 24px;
-  height: 24px;
-  fill: rgba(174, 19, 50, 1);
+  // width: 28px;
+  // height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 
   @media screen and (min-width: 768px) {
     top: 20px;
   }
+}
+
+.order-modal__cross {
+  width: 28px;
+  height: 28px;
+  stroke: rgba(174, 19, 50, 1);
+  stroke-width: 2.5px;
 }
 
 .order-modal__title {
@@ -80,14 +90,20 @@
   @media screen and (min-width: 768px) {
     width: 200px;
     height: 250px;
-    padding: 14px;
+    padding-top: 40px;
+    padding-bottom: 14px;
     padding-left: 20px;
+    padding-right: 30px;
     display: block;
   }
 
   @media screen and (min-width: 1280px) {
     width: 257px;
     height: 308px;
+    padding-top: 40px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 37px;
   }
 }
 
@@ -172,6 +188,27 @@
   right: 14px;
   width: 20px;
   height: 20px;
+  // outline: 5px solid rgba(255, 255, 255, 1);
+  opacity: 0;
+}
+
+.order-cards__checkbox:checked + .order-cards__strawberry .checkbox-icon {
+  fill: #fff;
+  opacity: 1;
+}
+
+.checkbox-icon {
+  fill: transparent;
+  background-color: inherit;
+}
+
+.order-cards__custom {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: inherit;
 }
 
 .order-list {
@@ -206,6 +243,21 @@
   }
 }
 
+.order-cards__strawberry {
+  background: #f8766b;
+  position: relative;
+}
+
+.order-cards__apple {
+  background: #edd251;
+  position: relative;
+}
+
+.order-cards__fruits {
+  background: #9dc262;
+  position: relative;
+}
+
 // .order-list__filling:placeholder {
 //   color: #000;
 //   font-size: 14px;
@@ -215,3 +267,37 @@
 //   line-height: 1.29;
 //   letter-spacing: -0.56px;
 // }
+
+.order-modal__btn {
+  color: #fff;
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.56px;
+  text-transform: capitalize;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background: #9dc162;
+
+  @media screen and (min-width: 768px) {
+    padding: 15px 35px;
+  }
+}
+
+.order-modal__photo {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: -400px;
+    right: -176px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -580px;
+    right: 0;
+  }
+}
