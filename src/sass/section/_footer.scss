@@ -15,7 +15,9 @@
 }
 
 .footer__first-content {
-  margin-right: 171px;
+  @media screen and (min-width: 768px) {
+    margin-right: 171px;
+  }
 
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -106,6 +108,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 250ms cubic-bezier(0.075, 0.82, 0.165, 1) 250ms;
+}
+
+.footer-socials__link:hover {
+  background: rgba(174, 19, 50, 0.1);
 }
 
 .footer-socials__icon {
