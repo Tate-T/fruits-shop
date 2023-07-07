@@ -30,7 +30,6 @@ z-index: 1000;
 position: absolute;
 left: 0;
 top: 64px;
-outline: 2px red solid;
 @media screen and (min-width: 768px) {
     font-size: 64px;
     letter-spacing: -0.04em;
@@ -193,11 +192,11 @@ margin-top: 44px;
 }
 
 .hero-section__item:nth-child(1){
-    margin-left: auto;
+        margin-left: auto;
 }
 
 .hero-section__item:nth-child(3){
-    margin-left: auto;
+        margin-left: auto;
 }
 
 .hero-section__button {
@@ -242,6 +241,7 @@ text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
         position: static;
         margin-left: auto;
     margin-right: auto;
+    transform: translateX(0);
       }
 }
 .hero-section__main-div-3{
@@ -251,6 +251,7 @@ text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     flex-direction: column-reverse;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
     @media screen and (min-width: 1200px) {
         flex-direction: column;
         margin-left: 0;
