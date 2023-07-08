@@ -180,7 +180,12 @@
   }
 
   &__item9 {
+    display: none;
     background-color: #98b37e;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
   }
 
   &__title {

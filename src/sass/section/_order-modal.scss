@@ -192,9 +192,29 @@
   opacity: 0;
 }
 
-.order-cards__checkbox:checked + .order-cards__strawberry .checkbox-icon {
+.order-cards__checkbox:checked
+  + .order-cards__strawberry
+  .order-cards__checked {
   fill: #fff;
   opacity: 1;
+}
+
+.order-cards__checkbox:checked
+  + .order-cards__apple
+  .order-cards__checked {
+  fill: #fff;
+  opacity: 1;
+}
+
+.order-cards__checkbox:checked
+  + .order-cards__fruits
+  .order-cards__checked {
+  fill: #fff;
+  opacity: 1;
+}
+
+.order-cards__checked {
+  opacity: 0;
 }
 
 .checkbox-icon {
@@ -202,13 +222,23 @@
   background-color: inherit;
 }
 
-.order-cards__custom {
+.order-cards__checked {
   width: 20px;
   height: 20px;
   position: absolute;
   top: 14px;
   right: 14px;
   background-color: inherit;
+}
+
+.order-cards__unchecked {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: 2px white solid;
+  border-radius: 4px;
 }
 
 .order-list {
@@ -237,7 +267,6 @@
   height: 132px;
   border-radius: 20px;
 
-
   @media screen and (min-width: 768px) {
     width: 360px;
     height: 145px;
@@ -246,28 +275,26 @@
 
 .order-cards__strawberry {
   background: #f8766b;
-  position: relative;
 }
 
 .order-cards__apple {
   background: #edd251;
-  position: relative;
 }
 
 .order-cards__fruits {
   background: #9dc262;
-  position: relative;
 }
 
-// .order-list__filling:placeholder {
-//   color: #000;
-//   font-size: 14px;
-//   font-family: DM Sans;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 1.29;
-//   letter-spacing: -0.56px;
-// }
+.order-list__filling::placeholder {
+  color: #000;
+  font-size: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.56px;
+  vertical-align: top;
+}
 
 .order-modal__btn {
   color: #fff;

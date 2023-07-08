@@ -21,13 +21,14 @@
 
   @media screen and (min-width: 768px) {
     top: -93px;
-    right: 18%;
+    right: 9%;
     font-size: 64px;
     max-width: 648px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
     max-width: 740px;
+    right: 22%;
   }
 }
 
@@ -148,4 +149,14 @@
 
 .subscribe__content {
   position: relative;
+}
+
+.subscribe__filling::placeholder {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.56px;
 }
