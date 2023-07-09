@@ -6,7 +6,6 @@
 .subscribe__title {
   position: absolute;
   top: -52px;
-  right: 5.5%;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -20,15 +19,51 @@
   max-width: 335px;
 
   @media screen and (min-width: 768px) {
-    top: -93px;
-    right: 9%;
-    font-size: 64px;
+    top: -78px;
+    right: 8%;
+    font-size: 54px;
     max-width: 648px;
   }
 
+  @media screen and (min-width: 800px) {
+    right: 10%;
+  }
+
+  @media screen and (min-width: 850px) {
+    right: 12%;
+  }
+
+  @media screen and (min-width: 900px) {
+    right: 14%;
+  }
+
+  @media screen and (min-width: 950px) {
+    right: 16%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    right: 18%;
+  }
+
+  @media screen and (min-width: 1050px) {
+    right: 20%;
+  }
+
+  @media screen and (min-width: 1100px) {
+    right: 21%;
+  }
+
+  @media screen and (min-width: 1150px) {
+    right: 22.5%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 23.5%;
+  }
+
   @media screen and (min-width: 1280px) {
+    right: 22.5%;
     max-width: 740px;
-    right: 22%;
   }
 }
 

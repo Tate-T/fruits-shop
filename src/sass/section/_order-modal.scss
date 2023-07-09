@@ -14,12 +14,10 @@
   @media screen and (min-width: 768px) {
     padding: 40px;
     width: 704px;
-    // height: 500px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 891px;
-    // height: 911px;
   }
 }
 
@@ -27,8 +25,6 @@
   position: absolute;
   top: 22px;
   right: 20px;
-  // width: 28px;
-  // height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,21 +191,18 @@
 .order-cards__checkbox:checked
   + .order-cards__strawberry
   .order-cards__checked {
-  fill: #fff;
   opacity: 1;
 }
 
 .order-cards__checkbox:checked
   + .order-cards__apple
   .order-cards__checked {
-  fill: #fff;
   opacity: 1;
 }
 
 .order-cards__checkbox:checked
   + .order-cards__fruits
   .order-cards__checked {
-  fill: #fff;
   opacity: 1;
 }
 
