@@ -194,15 +194,11 @@
   opacity: 1;
 }
 
-.order-cards__checkbox:checked
-  + .order-cards__apple
-  .order-cards__checked {
+.order-cards__checkbox:checked + .order-cards__apple .order-cards__checked {
   opacity: 1;
 }
 
-.order-cards__checkbox:checked
-  + .order-cards__fruits
-  .order-cards__checked {
+.order-cards__checkbox:checked + .order-cards__fruits .order-cards__checked {
   opacity: 1;
 }
 
@@ -213,6 +209,12 @@
 .checkbox-icon {
   fill: transparent;
   background-color: inherit;
+}
+
+.unchecked-icon {
+  fill: white;
+  width: 20px;
+  height: 20px;
 }
 
 .order-cards__checked {
